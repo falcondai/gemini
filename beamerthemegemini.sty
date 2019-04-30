@@ -94,15 +94,28 @@
 \setbeamertemplate{headline}
 {
   \begin{beamercolorbox}{headline}
+    \vskip3ex
     \begin{columns}
-      \begin{column}{\paperwidth}
+      \separatorcolumn
+      \begin{column}{0.4 \paperwidth}
         \usebeamerfont{headline}
-        \vskip3ex
-        \centering
+        % \centering
         {\usebeamerfont{headline title}\usebeamercolor[fg]{headline title}\inserttitle\\[0.5ex]}
+      \end{column}
+      \begin{column}{0.3 \paperwidth}
         {\usebeamerfont{headline author}\usebeamercolor[fg]{headline author}\insertauthor\\[1ex]}
         {\usebeamerfont{headline institute}\usebeamercolor[fg]{headline institute}\insertinstitute\\[1ex]}
       \end{column}
+      \begin{column}{0.2 \paperwidth}
+        \begin{flushright}
+        \begin{figure}
+          \includegraphics[scale=2.3]{logo-square-cropped.pdf}
+          \qquad
+          \includegraphics[scale=2.3]{logo-square-cropped.pdf}
+        \end{figure}
+        \end{flushright}
+      \end{column}
+      \separatorcolumn
     \end{columns}
     \vspace{5ex}
     \ifbeamercolorempty[bg]{headline rule}{}{

@@ -7,6 +7,7 @@ DEPS := \
 	beamercolorthemegemini.sty \
 	beamercolorthememit.sty \
 	beamercolorthemelabsix.sty \
+	beamercolorthemettic.sty \
 
 
 LATEX  := lualatex
@@ -19,7 +20,7 @@ TARGETS := $(patsubst %, %.pdf, $(BUILD))
 all: $(TARGETS)
 
 clean:
-	rm -rf *.pdf *.aux *.bbl *.blg *.log *.nav *.out *.snm *.toc
+	rm -rf poster.pdf *.aux *.bbl *.blg *.log *.nav *.out *.snm *.toc
 
 .PHONY: all clean
 
